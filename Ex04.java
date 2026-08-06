@@ -2,7 +2,7 @@ package atividades;
 
 import java.util.Scanner;
 
-public class ex04 {
+public class Ex04 {
 
 	public static void main(String[] args) {
 		
@@ -12,9 +12,9 @@ public class ex04 {
 		double r = leitor.nextDouble();
 		
 		double volume = (4.0/3.0) * Math.PI * Math.pow(r, 3);
-		// os números precisam ser 4.0 e 3.0 se não ele faz a divisão inteira
+		// os nÃºmeros precisam ser 4.0 e 3.0 se nÃ£o ele faz a divisÃ£o inteira
 		
-		System.out.println("O volume da esfera é "+volume +" cm³");
+		System.out.println("O volume da esfera Ã© "+volume +" cmÂ³");
 		
 		leitor.close();
 	}
