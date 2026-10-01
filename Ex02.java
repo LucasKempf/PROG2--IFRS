@@ -2,20 +2,20 @@ package atividades;
 
 import java.util.Scanner;
 
-public class ex02 {
+public class Ex02 {
 
 	public static void main(String[] args) {
 		
 		Scanner leitor = new Scanner(System.in);
 		
-		System.out.println("Escreva um número inteiro: ");
+		System.out.println("Escreva um nÃºmero inteiro: ");
 		int x = Integer.parseInt(leitor.nextLine());
 		
 		int y = x % 2;
 		
 		if (y==0) {
-			System.out.println("O número é par.");
-		}else {System.out.println("O número é ímpar.");}
+			System.out.println("O nÃºmero Ã© par.");
+		}else {System.out.println("O nÃºmero Ã© Ã­mpar.");}
 		
 		leitor.close();
 	}
