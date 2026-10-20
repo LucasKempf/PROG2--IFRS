@@ -1,0 +1,15 @@
+package Atividade01;
+
+public class Animal {
+
+	public String raca;
+	public double peso; 
+	public String cor;
+	
+	public void imprimir() {
+		System.out.println("Ra�a: " + this.raca);
+		System.out.println("Peso: " + this.peso + " KG");
+		System.out.println("Cor: " + this.cor);
+	}
+
+}
