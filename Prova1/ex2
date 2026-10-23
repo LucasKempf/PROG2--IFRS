@@ -1,0 +1,48 @@
+package ex2;
+
+import java.util.Scanner;
+
+public class Atividade02 {
+
+	public static void main(String[] args) {
+		
+		Scanner leitor = new Scanner(System.in);
+
+ 
+        System.out.print("Digite o número de palavras (n): ");
+        int n = leitor.nextInt();
+        leitor.nextLine(); 
+
+        
+        String[] palavras = new String[n];
+
+        
+        System.out.println("Digite as " + n + " palavras:");
+        for (int i = 0; i < n; i++) {
+            System.out.print("Palavra " + (i + 1) + ": ");
+            palavras[i] = leitor.nextLine();
+        }
+
+        String menorPalavra = palavras[0];
+        String maiorPalavra = palavras[0];
+
+        for (int i = 1; i < n; i++) {
+           //palavras.length: quantidade de palavras armazenáveis no array.
+           //palavras[i].length(): quantidade de caracteres da palavra na posição i.
+           
+            if (palavras[i].length() < menorPalavra.length()) {
+                menorPalavra = palavras[i];
+            }
+
+            
+            if (palavras[i].length() > maiorPalavra.length()) {
+                maiorPalavra = palavras[i];
+            }
+        }
+
+        System.out.println("(b) Menor palavra: " + menorPalavra + " (Tamanho: " + menorPalavra.length() + ")");
+        System.out.println("(c) Maior palavra: " + maiorPalavra + " (Tamanho: " + maiorPalavra.length() + ")");
+
+        leitor.close();
+    }
+}
