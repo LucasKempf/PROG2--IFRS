@@ -1,0 +1,16 @@
+package exemplo4;
+
+public class Ex4 {
+
+	public static void main(String[] args) {
+		
+		Livro l1 = new Livro (123, 89.90, "As vozes que não falam", " Daniel Menezes");
+		
+		System.out.println("---Livro---");
+		System.out.println("Código: "+l1.getCodigo());
+		System.out.println("Valor: R$"+l1.getValor());
+		System.out.println("Título: "+l1.getTitulo());
+		System.out.println("Autor: "+l1.getAutor());
+	}
+
+}
