@@ -1,0 +1,14 @@
+package exemplo1;
+
+public class Ex1 {
+
+	public static void main(String[] args) {
+		
+		Motorista m1 = new Motorista("Thiago", 35, "12345678");
+		
+		System.out.println(m1.getNome());
+		System.out.println(m1.getIdade());
+		System.out.println(m1.getCnh());
+	}
+
+}
