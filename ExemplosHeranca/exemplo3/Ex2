@@ -1,0 +1,17 @@
+package exemplo2;
+
+public class Ex2 {
+
+	public static void main(String[] args) {
+		
+		Carro c1 = new Carro ("Volkswagen" , "Golf", 35000.00, "1.6 aspirado", "12345678");
+		
+		System.out.println(c1.getMarca());
+		System.out.println(c1.getModelo());
+		System.out.println(c1.getValor());
+		System.out.println(c1.getMotor());
+		System.out.println(c1.getRenavam());
+		
+	}
+
+}
